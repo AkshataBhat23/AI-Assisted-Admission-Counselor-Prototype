@@ -3,7 +3,7 @@
 A Python-based command-line tool that acts as an AI-driven college admissions counselor. This system takes a student's academic profile (interests, strengths, weaknesses, and preferences) and generates:
 
 - A personalized SWOT analysis (with LLM-based Opportunities and Threats)
-- Matched university programs (scraped or mock-based)
+- Matched university programs (scraped)
 - Tailored academic advice using OpenRouter AI models
 
 ---
@@ -11,7 +11,7 @@ A Python-based command-line tool that acts as an AI-driven college admissions co
 ## ✨ Features
 
 - ✅ **Student Input** via command-line
-- ✅ **SWOT Analysis Engine** powered by OpenRouter (`mistral-7b-instruct`)
+- ✅ **SWOT Analysis Engine** powered by OpenRouter (`cypher-alpha:free`)
 - ✅ **Real-world Program Matching** via web scraping or mock dataset
 - ✅ **LLM-generated Advice** customized for the student profile
 - ✅ **Modular, well-commented code** for easy understanding and extension
@@ -35,13 +35,12 @@ Takes student input such as:
 
 ### ➤ 3. Program Matching
 
-- Scrapes data from real university websites (e.g., SCOE, VJTI, ACE)
-- Optionally uses mock data if scraping fails
-- Filters results based on interests and preferences
+- Scrapes data from real university websites (e.g., SCOE, VJTI, ACE).
+- Filters results based on interests and preferences.
 
 ### ➤ 4. LLM-Powered Advice
 
-- Uses OpenRouter's `mistral-7b-instruct` to:
+- Uses OpenRouter's `cypher-alpha:free` to:
   - Offer personalized application advice
   - Motivate the student
   - Recommend strengths to highlight in SOP
@@ -53,7 +52,4 @@ Takes student input such as:
 ### 🔧 Requirements
 
 - Python 3.7+
-- `requests`, `beautifulsoup4`, `python-dotenv`
-
-```bash
-pip install requests beautifulsoup4 python-dotenv
+- `requests`, `beautifulsoup4`
